@@ -1,0 +1,46 @@
+# 本 repo 是公開的 —— 這份清單是「絕不該公開的東西」的最後一道攔截。
+# 它擋得住常見型式，擋不住改過名的檔案；推之前仍要自己看一眼 git status。
+
+# 機敏憑證
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*.keystore
+*.jks
+credentials*.json
+client_secret*.json
+token*.json
+service-account*.json
+*refresh_token*
+*access_token*
+
+# 產製中間檔與未定稿（成品才進來，過程不進來）
+*.psd
+*.xcf
+*.ai
+*.sketch
+*_draft.*
+*_wip.*
+*-draft.*
+*-wip.*
+_raw/
+_temp/
+_measure/
+sources/
+
+# 大檔：影片與音檔走各自平台的原生上傳，不經圖床
+*.mp4
+*.mov
+*.wav
+*.mp3
+*.flac
+
+# 作業系統與編輯器雜物
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
