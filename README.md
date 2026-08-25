@@ -22,6 +22,11 @@ social/{營運主體}/{該主體的落點慣例}/{檔名}
 |---|---|---|
 | 喵曆 `meowlendar` | `social/meowlendar/{YYYY}/{MM}/{DD}/` | `brand/meowgood/apps/meowlendar/ops/{YYYY}/{MM}/{DD}/` |
 | 阿灰的書店鋼琴 `classical-piano` | `social/classical-piano/ep{NN}/` | `brand/meowgood/animation/classical-piano/ep{NN}/` |
+| 雪露的花店情歌 `female-vocal-songs` | `social/female-vocal-songs/ep{NN}/` | 影片庫 `brand/meowgood/animation/female-vocal-songs/ep{NN}/` |
+| 栗子的澡堂靈魂樂 `male-vocal-songs` | `social/male-vocal-songs/ep{NN}/` | 影片庫 `brand/meowgood/animation/male-vocal-songs/ep{NN}/` |
+| 喵谷の故事屋 `meowgood-story` | `social/meowgood-story/{line-slug}/ep{NN}/` | 影片庫 `brand/meowgood/animation/{line-slug}/ep{NN}/` |
+
+上面三條線的來源在**影片庫**（私有 repo `amandachen0718/meowgoodstory`）、不在 OES，逐支兩張：`thumbnail-16x9.jpg`（1280×720，供 Threads）與 `thumbnail-1x1.jpg`（1080×1080 上下黑邊，供 IG）。檔名規格的 SSOT 為 OES 的品牌營運清冊 DOC-BD-004「跨營運主體共用資源」段。
 
 路徑刻意鏡射 OES 的落點慣例，好讓「這張圖是哪一輪的」一眼看得出來、不必查表。
 
