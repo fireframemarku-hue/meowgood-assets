@@ -1,8 +1,10 @@
 # meowgood-assets
 
-喵谷（Meowgood）社群發佈用的**公開圖床**。存在的唯一理由：Instagram 與 Threads 的發文 API 沒有圖片直傳，只收「公開 HTTPS 直連檔案」——Meta 伺服器會自己去 cURL 那個網址。本 repo 就是那個網址的來源。
+社群發佈用的**公開圖床**，跨傘狀 IP 共用。存在的唯一理由：Instagram 與 Threads 的發文 API 沒有圖片直傳，只收「公開 HTTPS 直連檔案」——Meta 伺服器會自己去 cURL 那個網址。本 repo 就是那個網址的來源。
 
 品牌產出的 SSOT 在私有的 `OES` repo；本 repo **只放已經要對外發佈的成品圖**，是發佈管線的一站，不是素材庫。
+
+> **repo 名字是歷史，不是範圍。** 建立時只有喵谷一個 IP，名字就沿用了；現在 **AI選物研究所（`aipicktw`）等獨立 IP 也共用本圖床**。不改名是因為改了會讓所有既有 URL 失效，而**這個名字不會外流給讀者** —— Meta 與 Threads 取圖後自行轉存，貼文上顯示的是它們的網址、不是這裡的。新 IP 進來只在 `social/` 下開自己的營運主體夾，其餘不動。
 
 ## 三條紀律
 
@@ -21,12 +23,15 @@ social/{營運主體}/{該主體的落點慣例}/{檔名}
 | 營運主體 | 路徑慣例 | 對應 OES 的落點 |
 |---|---|---|
 | 喵曆 `meowlendar` | `social/meowlendar/{YYYY}/{MM}/{DD}/` | `brand/meowgood/apps/meowlendar/ops/{YYYY}/{MM}/{DD}/` |
-| 阿灰的書店鋼琴 `classical-piano` | `social/classical-piano/ep{NN}/` | `brand/meowgood/animation/classical-piano/ep{NN}/` |
+| 阿灰的書店鋼琴 `classical-piano` | `social/classical-piano/ep{NN}/` | `brand/meowgood/animation/classical-piano/ep{NN}/`（在 OES，非影片庫）|
 | 雪露的花店情歌 `female-vocal-songs` | `social/female-vocal-songs/ep{NN}/` | 影片庫 `brand/meowgood/animation/female-vocal-songs/ep{NN}/` |
 | 栗子的澡堂靈魂樂 `male-vocal-songs` | `social/male-vocal-songs/ep{NN}/` | 影片庫 `brand/meowgood/animation/male-vocal-songs/ep{NN}/` |
 | 喵谷の故事屋 `meowgood-story` | `social/meowgood-story/{line-slug}/ep{NN}/` | 影片庫 `brand/meowgood/animation/{line-slug}/ep{NN}/` |
+| AI選物研究所 `aipicktw`（**非喵谷**）| `social/aipicktw/{YYYY}/{MM}/{DD}/` | `brand/aipicktw/social/{YYYY}/{MM}/{DD}/assets/aipicktw/` |
 
-上面三條線的來源在**影片庫**（私有 repo `amandachen0718/meowgoodstory`）、不在 OES，逐支兩張：`thumbnail-16x9.jpg`（1280×720，供 Threads）與 `thumbnail-1x1.jpg`（1080×1080 上下黑邊，供 IG）。檔名規格的 SSOT 為 OES 的品牌營運清冊 DOC-BD-004「跨營運主體共用資源」段。
+選物線與上表其他線的差別在**只需要一張**：該線的 IG 走 Reels、吃本機絕對路徑不吃圖床，所以只有 Threads 的 4:5 資訊卡上來（`threads-{YYYY-MM-DD}-card-45.jpg`，1080×1350）。
+
+上面三條線的來源在**影片庫**（私有 repo `amandachen0718/meowgoodstory`）、不在 OES；阿灰線的來源在 OES。四條線逐支都是兩張：`thumbnail-16x9.jpg`（1280×720，供 Threads）與 `thumbnail-1x1.jpg`（1080×1080 上下黑邊，供 IG）。檔名規格的 SSOT 為 OES 的品牌營運清冊 DOC-BD-004「跨營運主體共用資源」段。
 
 路徑刻意鏡射 OES 的落點慣例，好讓「這張圖是哪一輪的」一眼看得出來、不必查表。
 
